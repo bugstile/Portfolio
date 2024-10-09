@@ -1,0 +1,209 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins-light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --color-background: #0d1117;
+    --text-color: #f1efef;
+    --header-color: #010409;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6em;
+    background-color: #ffffffaf;
+    font-family: "Poppins";
+}
+
+header {
+    background-color: var(--color-background);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    margin:0;
+    padding:0;
+    padding:25px;
+    line-height:1.6em;
+    letter-spacing:0.1em;
+    font-size: clamp(2rem, 3vw, 4rem);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    padding: 15px;
+    font-size: 1.2em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration:underline 0.1em;
+    text-underline-offset:0.3em;
+}
+
+main {
+    flex: 1;
+    display: flex;
+}
+
+article {
+    padding: 2em;
+}
+
+aside {
+    padding: 2em;
+}
+
+footer {
+    position: relative;
+    background-color: var(--color-background);
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ul{
+    margin:0;
+    padding:0;
+}
+
+footer ul li{
+    padding:10px;
+}
+
+.icon-menu,
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+  
+.icon-menu,
+.menu-item {
+    list-style: none;
+}
+  
+.icon-link {
+    font-size: 2rem;
+    color: #fff;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.icon-link:hover, 
+.icon-link:focus {
+    transform: translateY(-10px);
+}
+
+.icon {
+    width:32px;
+    height:32px;
+}
+  
+.menu-link {
+    font-size: 1.2rem;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;  
+    font-weight: 300;
+}
+  
+.menu-link:hover,
+.menu-link:focus {
+    text-decoration:underline 0.1em;
+    text-underline-offset:0.3em;
+}
+  
+.footer p {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+}
+  
+.wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url('img/wave3.png');
+    background-size: 1000px 100px;
+}
+  
+.wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+}
+  
+.wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite;
+}
+  
+.wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+}
+  
+.wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+}
+  
+@keyframes animateWaves {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+}
+  
+@keyframes animate {
+    0% {
+      background-position-x: -1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+
+    footer {
+        margin-top:100px;
+    }
+}
