@@ -1,8 +1,3 @@
-## Länk till GitHub-repo
-[https://github.com/bugstile/Portfolio](https://github.com/bugstile/Portfolio)
-
-Du behöver inte öppna länken för att börja med instruktionerna.
-
 ### Instruktioner:
 
 1. **Öppna Visual Studio Code**.
