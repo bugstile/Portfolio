@@ -11,6 +11,11 @@
     --header-color: #010409;
 }
 
+html{
+    margin:0;
+    padding:0;
+}
+
 body {
     font-family: "Poppins";
     background-color: var(--header-color);
@@ -20,6 +25,8 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    margin:0;
+    padding:0;
 }
 
 ul {
@@ -33,10 +40,7 @@ li {
 }
 
 header {
-    background-color: var(--color-background);
-    color: white;
-    text-align: center;
-    padding: 30px;
+
 }
 
 nav a {
@@ -112,6 +116,10 @@ footer {
     flex: 1;
     margin-top: 150px;
     max-height: 250px;
+}
+
+footer ul {
+    display: flex;
 }
 
 .icon-menu li, .menu li {
@@ -210,6 +218,11 @@ footer {
 }
 
 header {
+    /* Backup code */
+    background-color: var(--color-background);
+    /* Backup code */
+
+    color: var(--text-color);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -241,6 +254,11 @@ h1 {
     line-height: clamp(2.2rem, 3vw, 3.2rem);
     letter-spacing: 0.15rem;
     font-size: clamp(2.2rem, 3vw, 3.2rem);
+    font-weight:100;
+}
+
+.gallery-container {
+    padding-top:50px;
 }
 
 .gallery-container h2 {
@@ -264,11 +282,11 @@ h1 {
 }
 
 .gallery-item {
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.4s ease-in-out;
     text-align: center;
 }
 
-.gallery-item:hover {
+.gallery-item:hover, .gallery-item:focus {
     transform: scale(1.1);
 }
 
