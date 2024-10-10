@@ -1,3 +1,4 @@
+/* Font-family importerad via .ttf */
 @font-face {
     font-family: "Poppins";
     src: url("fonts/Poppins-light.ttf") format("truetype");
@@ -5,15 +6,26 @@
     font-style: normal;
 }
 
+/* Färg-schema för hemsidan */
 :root {
     --color-background: #0d1117;
     --text-color: #f1efef;
     --header-color: #010409;
 }
 
-html{
+html {
     margin:0;
     padding:0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -54,7 +66,7 @@ header {
     background-image: url('img/headeroptimized.webp');
     background-size: cover;
     background-position: 5% 5%;
-    opacity: 0.3;
+    opacity: 0.2;
     z-index: 1;
 }
 
@@ -68,27 +80,6 @@ h1 {
     letter-spacing: 0.15rem;
     font-size: clamp(2.2rem, 3vw, 3.2rem);
     font-weight:100;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    margin: 0;
-    padding: 0;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-}
-
-nav a:hover, 
-nav a:focus {
-    text-decoration: underline 0.1em;
-    text-underline-offset: 0.3em;
 }
 
 main {
@@ -143,20 +134,20 @@ aside {
     order: 2;
 }
 
-.ul-container {
-    padding-left: 1.05em;
-}
-
-.ul-container li {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
 aside ul{
     padding-left: 1.05em;
 }
 
 aside ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.ul-container {
+    padding-left: 1.05em;
+}
+
+.ul-container li {
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -238,10 +229,21 @@ footer ul {
 }
 
 .footer p {
-    color: #fff;
+    color: var(--text-color);
     font-size: 1rem;
     font-weight: 300;
     text-align: center;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+nav a:hover, 
+nav a:focus {
+    text-decoration: underline 0.1em;
+    text-underline-offset: 0.3em;
 }
 
 .icon-menu li, .menu li {
@@ -264,7 +266,7 @@ footer ul {
   
 .icon-link {
     font-size: 2rem;
-    color: #fff;
+    color: var(--text-color);
     display: inline-block;
     transition: 0.5s;
 }
@@ -282,7 +284,7 @@ footer ul {
   
 .menu-link {
     font-size: 1.2rem;
-    color: #fff;
+    color: var(--text-color);
     display: inline-block;
     text-decoration: none;  
     font-weight: 300;
