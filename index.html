@@ -9,41 +9,116 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <!-- <header>
         <h1>Ritschewald's "Portfolio"</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    </header> -->
+    <!-- <section class="section-7">
+        <div class="trapper-page">
+            <img src="img/headeroptimized.webp"
+              alt="A majestic dragon chilling on top of countless gold underneath Umeå University."
+              class="section-7-big-image">
+            <div class="section-7-image-overlay">
+              <div class="image-text">
+                <h1>Thick Dragons, Heavy Trappers</h1>
+                <p>Spit fire, stack scales, conquer realms in this epic adventure.</p>
+                <a href="#unleash-the-beast" class="cta-button">Unleash the Beast</a>
+              </div>
+            </div>
+          </div>
+        </section> -->
+    <header>
+        <div class="background"></div>
+        <h1>Ritschewald</h1>
     </header>
     <main>
-        <article class="article-introduction">
-            <h2>Hej där!</h2>
-            <p>Jag är Sebastian Ritschewald, en passionerad webbutvecklare och deltidspizzaälskare. </p>
-            <p>När jag inte eliminerar buggar i koden, kan du hitta mig när jag finjusterar min cheese-to-sauce ratio eller känslomässigt binder mig till min to-do-list. </p>
-            <p>Jag tror att bra webbplatser är som bra pizzor. Krispiga i kanterna, välbalanserade och tillfredsställande.</p>
-        </article>
-        
-        <aside>
-            <h2>Vad jag gör:</h2>
-            <ul>
-                <li>
-                    Skriver kod som inte går sönder... för det mesta.
-                </li>
-                <li>
-                    Skapar webbplatser som ser ut som att jag spenderade hela natten på dem (även om jag absolut inte gjorde det).
-                </li>
-                <li>
-                    Debuggar mitt liv lika ofta som jag debuggar min kod.
-                </li>
-            </ul>
-        </aside>
+        <section class="article-introduction-container">
+            <article class="article-introduction">
+                <h2>
+                    Hej där!
+                </h2>
+                <p>
+                    Jag är Sebastian Ritschewald, en passionerad webbutvecklare och deltidspizzaälskare. 
+                </p>
+                <p>
+                    När jag inte eliminerar buggar i koden, kan du hitta mig när jag finjusterar min cheese-to-sauce ratio eller känslomässigt binder mig till min to-do-list. 
+                </p>
+                <p>
+                    Jag tror att bra webbplatser är som bra pizzor. Krispiga i kanterna, välbalanserade och tillfredsställande.
+                </p>
+            </article>
+            
+            <aside>
+                <h3>
+                    Vad jag gör:
+                </h3>
+                <ul class="ul-container">
+                    <li>
+                        Skriver kod som inte går sönder... för det mesta.
+                    </li>
+                    <li>
+                        Skapar webbplatser som ser ut som att jag spenderade hela natten på dem (även om jag absolut inte gjorde det).
+                    </li>
+                    <li>
+                        Debuggar mitt liv lika ofta som jag debuggar min kod.
+                    </li>
+                </ul>
+            </aside>
+        </section>
+
+        <section class="article-skills-container">
+            <article class="article-skills">
+                <h3>
+                    Färdigheter
+                </h3>
+                <ul class="ul-container">
+                    <li>
+                        HTML: Jag talar flytande &lt;div&gt;.
+                    </li>
+                    <li>
+                        CSS: Kan få en skugga runt en ruta att se ut som ett mästerverk.
+                    </li>
+                    <li>
+                        JavaScript: Min kod fungerar för det mesta, precis som jag efter tre koppar kaffe.
+                    </li>
+                    <li>
+                        React: Komponentiserar mitt liv, en återanvändbar bit i taget.
+                    </li>
+                    <li>
+                        Git: Engagerad i att inte glömma att göra commit.
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="gallery-container">
+            <h2>
+                Projekt
+            </h2>
+            <div class="gallery-item-container">
+                <figure class="gallery-item">
+                    <img src="img/catspacesida.png" alt="Cat Space Portfolio Hemsida">
+                    <div class="caption-title">
+                        Cat Space
+                    </div>
+                    <figcaption class="caption">
+                        Min första hemsida i kursen, byggt för att uppfylla krav för första veckan av HTML&CSS Bootcamp
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="img/catspacesida.png" alt="Cat Space Portfolio Hemsida">
+                    <div class="caption-title">
+                        Cat Space
+                    </div>
+                    <figcaption class="caption">
+                        Min första hemsida i kursen, byggt för att uppfylla krav för första veckan av HTML&CSS Bootcamp
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
     </main>
     
     <footer class="footer">
-        <div class="waves">
+        <div class="waves" alt="animation som simulerar ett svart hav">
             <div class="wave" id="wave1"></div>
             <div class="wave" id="wave2"></div>
             <div class="wave" id="wave3"></div>
@@ -51,25 +126,33 @@
         </div>
     <ul class="icon-menu">
         <li class="icon-item">
-            <a class="icon-link" href="https://www.linkedin.com/in/sebastian-ritschewald-233618110/" name="Find me on linkedin">
-                <img alt="linkedin logo" class="icon" name="logo" src="img/logo-linkedin.svg"/>
+            <a class="icon-link" href="https://www.linkedin.com/in/sebastian-ritschewald-233618110/" title="Klicka för att nå min LinkedIn">
+                <img alt="linkedin länk logo" class="icon" aria-label="LinkedIn profil" title="Klicka för att nå min Linkedin" src="img/logo-linkedin.svg"/>
             </a>
         </li>
         <li class="icon-item">
-            <a class="icon-link" href="https://github.com/bugstile" name="Find me on github">
-                <img alt="github logo" class="icon" name="logo" src="img/logo-github.svg"/>
+            <a class="icon-link" href="https://github.com/bugstile" title="Klicka för att nå min Github">
+                <img alt="github länk logo" class="icon" aria-label="Github profil" title="Klicka för att nå min Github" src="img/logo-github.svg"/>
             </a>
         </li>
         <li class="icon-item">
-            <a class="icon-link" href="https://instagram.com/sebbehmm" name="Find me on instagram">
-                <img alt="instagram logo" class="icon" name="logo" src="img/logo-instagram.svg"/>
+            <a class="icon-link" href="https://instagram.com/sebbehmm" title="Klicka för att nå min Instagram" >
+                <img alt="instagram länk logo" class="icon" aria-label="LinkedIn profil" name="Klicka för att nå min Instagram" src="img/logo-instagram.svg"/>
             </a>
         </li>
     </ul>
-    <ul class="menu">
-        <li class="menu-item"><a class="menu-link" href="index.html">Home</a></li>
-        <li class="menu-item"><a class="menu-link" href="contact.html">Contact</a></li>
-    </ul>
+    <nav class="menu">
+        <li class="menu-item">
+            <a class="menu-link" href="index.html" title="Gå till hemsidan">
+                Hem
+            </a>
+        </li>
+        <li class="menu-item">
+            <a class="menu-link" href="contact.html" title="Gå till kontaktsidan">
+                Kontakt
+            </a>
+        </li>
+    </nav>
         <p>&copy;2024 Sebastian Ritschewald</p>
     </footer>
 
