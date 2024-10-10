@@ -8,9 +8,9 @@
 
 /* Färg-schema för hemsidan */
 :root {
-    --color-background: #0d1117;
+    --lighter-background-color: #0d1117;
     --text-color: #f1efef;
-    --header-color: #010409;
+    --background-color: #010409;
 }
 
 html {
@@ -30,7 +30,7 @@ li {
 
 body {
     font-family: "Poppins";
-    background-color: var(--header-color);
+    background-color: var(--background-color);
     color: var(--text-color);
     line-height: clamp(1.6rem, 2.5vw, 2rem);
     letter-spacing:clamp(0.001rem, 2vw, 0.1rem);
@@ -43,7 +43,7 @@ body {
 
 header {
     /* Backup code */
-    background-color: var(--color-background);
+    background-color: var(--lighter-background-color);
     /* Backup code */
 
     color: var(--text-color);
@@ -212,7 +212,7 @@ aside ul li {
 
 footer {
     position: relative;
-    background-color: var(--color-background);
+    background-color: var(--lighter-background-color);
     min-height: 100px;
     padding: 20px 50px;
     display: flex;
