@@ -359,3 +359,30 @@ footer ul {
         flex-direction: column;
     }
 }
+
+@media (min-width: 680px) {
+    .gallery-item-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    .gallery-item-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1600px) {
+    .article-introduction-container,
+    .article-skills-container,
+    .gallery-item-container {
+        max-width:75vw;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 2000px) {
+    .gallery-item-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
